@@ -21,3 +21,9 @@ elif num == 3:
     liter = float(input('Enter number of liters: '))
     gal = liter*0.264172
     print(liter, 'liters is', gal, 'gallons')
+elif num == 4:
+    celsius = float(input('Enter degrees in celcius: '))
+    far = celsius*(9/5)+32
+    print(celsius, 'degrees celsius is', far, 'fahrenheit')
+else:
+    print('ERROR, number not between 1-4')
