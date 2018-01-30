@@ -1,1 +1,16 @@
+#Liam Collins
+#1/30/18
+#compoundDemo.py - how to use and/or
 
+num = int(input('Enter a number: '))
+
+if num > 0 and num%7==0:
+    print(num, 'is positive and divisible by 7')
+elif num > 0:
+    print(num, 'is positive and not divisble by 7')
+elif num < 0 and num%7==0:
+    print(num, 'is negative and divisble by 7')
+elif num < 0:
+    print(num, 'is negative and not divisble by 7')
+else:
+    print(num, 'is zero')
