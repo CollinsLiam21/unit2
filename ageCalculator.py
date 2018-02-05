@@ -11,12 +11,12 @@ age = date.today().year-year
 age2 = date.today().year-year-1
 
 if month < date.today().month:
-    print(age)
+    print('You are', age, 'years old')
 elif month == date.today().month and day < date.today().day:
-    print(age)
+    print('You are', age, 'years old')
 elif month == date.today().month and day > date.today().day:
-    print(age2)
+    print('You are', age2, 'years old')
 elif month > date.today().month:
-    print(age2)
+    print('You are', age2, 'years old')
 else:
     print('Happy Birthday! You are now', age, 'years old!')
