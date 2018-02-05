@@ -4,8 +4,19 @@
 
 from datetime import date
 
-year = input('Enter year you were born: ')
-month = input('Enter the month you were born in: ')
-day = input('Enter the day you were born on: ')
+year = int(input('Enter year you were born: '))
+month = int(input('Enter the month you were born in: '))
+day = int(input('Enter the day you were born on: '))
+age = date.today().year-year
+age2 = date.today().year-year-1
 
-date.today().year-year
+if month < date.today().month:
+    print(age)
+elif month == date.today().month and day < date.today().day:
+    print(age)
+elif month == date.today().month and day > date.today().day:
+    print(age2)
+elif month > date.today().month:
+    print(age2)
+else:
+    print('Happy Birthday! You are now', age, 'years old!')
